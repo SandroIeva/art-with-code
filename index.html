@@ -59,7 +59,7 @@ html,body{background:var(--bg);color:var(--fg);font-family:'DM Sans','DM Mono',-
 .artwork-nav button:hover{background:rgba(30,30,30,0.7);border-color:rgba(255,255,255,0.2);transform:scale(1.04)}
 .artwork-nav button:active{transform:scale(0.94)}
 
-.artwork-title-tag{position:fixed;top:max(16px,env(safe-area-inset-top));left:50%;transform:translateX(-50%);z-index:99;background:rgba(20,20,20,0.55);-webkit-backdrop-filter:blur(20px) saturate(1.4);backdrop-filter:blur(20px) saturate(1.4);border:1px solid rgba(255,255,255,0.08);border-radius:22px;padding:10px 18px;font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,0.85);letter-spacing:0.02em;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity 0.4s var(--ease) 0.2s;max-width:calc(100vw - 200px);overflow:hidden;text-overflow:ellipsis}
+.artwork-title-tag{position:fixed;bottom:max(24px,env(safe-area-inset-bottom));top:auto;left:50%;transform:translateX(-50%);z-index:99;background:rgba(20,20,20,0.55);-webkit-backdrop-filter:blur(20px) saturate(1.4);backdrop-filter:blur(20px) saturate(1.4);border:1px solid rgba(255,255,255,0.08);border-radius:22px;padding:10px 18px;font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,0.85);letter-spacing:0.02em;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity 0.4s var(--ease) 0.2s;max-width:calc(100vw - 200px);overflow:hidden;text-overflow:ellipsis}
 #artwork-view.active .artwork-title-tag{opacity:1}
 
 #transition-overlay{position:fixed;inset:0;z-index:200;pointer-events:none;display:flex;align-items:center;justify-content:center}
@@ -80,7 +80,7 @@ html,body{background:var(--bg);color:var(--fg);font-family:'DM Sans','DM Mono',-
 .gallery-footer{padding:12px 20px;padding-bottom:max(12px,env(safe-area-inset-bottom))}
 .trans-label{font-size:26px;padding:0 20px;text-align:center}
 .artwork-nav button{width:40px;height:40px;font-size:16px}
-.artwork-title-tag{max-width:calc(100vw - 140px);font-size:11px;padding:8px 14px}
+.artwork-title-tag{max-width:calc(100vw - 140px);font-size:11px;padding:8px 14px;bottom:max(20px,env(safe-area-inset-bottom))}
 }
 </style>
 </head>
